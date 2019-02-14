@@ -1,0 +1,15 @@
+
+  
+<div id="idGrid">
+<ag-grid-angular 
+#agGrid
+	style="width: 1000px; height: 480px;" 
+	class="ag-theme-balham"
+	[rowData]="rowData" 
+	[columnDefs]="coloumsDefs"
+	[masterDetail]="true"
+	[detailCellRendererParams]="detailCellRendererParams"
+	[rowData]="rowData"
+	(gridReady)="onGridReady($event)">
+</ag-grid-angular>
+</div>

@@ -1,0 +1,21 @@
+
+<br/>
+ <div class="example-button-row">
+	<button mat-raised-button (click)="ExportIntoExl()">Export With Ag-Enterprice</button>&nbsp;&nbsp;&nbsp;
+	<button mat-raised-button (click)="export()">Export</button>
+	</div><br/>
+	<br/>
+<div id="centerGrid">
+<ag-grid-angular 
+#agGrid
+	style="width: 1000px; height: 380px;" 
+	class="ag-theme-balham"
+	[rowData]="rowDatass" 
+  [defaultColDef]="defaultColDef"
+	[columnDefs]="columnDefs"
+	[masterDetail]="true"
+	[detailCellRendererParams]="detailCellRendererParams"
+ 
+	(gridReady)="onGridReady($event)">
+</ag-grid-angular>
+</div>
